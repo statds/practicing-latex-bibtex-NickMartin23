@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[margin = 1in]{geometry}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{lipsum}
+\usepackage[colorlinks=true,citecolor=blue]{hyperref}
+
+\title{Assignment #2 Practicing Latex and Bibtex}
+\author{Nicholas Martin\\
+Statistics Major\\
+University of Connecticut}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In this page I will very loosley descrive several statical elements in order to showcase the elements of a statistical manuscript outlined in Assignment #2 (STAT-3494W)
+\end{abstract}
+
+\section{Introduction}
+\label{sec:Introduction}
+
+\lipsum[1]
+
+\citet{larsen2005introduction} wrote an introductory text on mathematical statistics.  
+
+\citep{weir2002estimating} wrote an article on estimating F statistics.  
+
+% roadmap paragraph
+This is how the rest of the paper will unfold. 
+I will include equations in Section~\ref{sec:equations}.  
+Then I will discuss the statistical analysis in Section~\ref{sec:analysis}. 
+Finally I will elaborate on the results in Section~\ref{sec:results}.
+
+\section{Equations}
+\label{sec:equations}
+
+No statistical analysis is complete without some equating:
+\begin{equation}
+    \label{eq:slopeinterceptform}
+    y = mx + b
+\end{equation}
+
+We can further identify equation~\eqref{eq:slopeinterceptform}.
+We can break $mx + b$ down into its slope $mx$, and its y-intercept, $b$.
+\begin{equation}
+    \label{eq:arithmaticmean}
+    ( \frac{1}{n} \sum_{i=i}^{n} x_{i} \)
+\end{equation}
+
+The equation~\eqref{eq:arithmaticmean}, is very standard, and describes the general formula to find the mean of a sample.
+$n$ represents the number of values and $x_{i}$ respresents all of the value within a dataset.
+
+
+\section{Statistical Analysis}
+\label{sec:analysis}
+
+This remains the section of the manuscript where I would in turn describe the various throughs of my statistical methods.
+
+\section{Results}
+\label{sec:results}
+
+Here I will summarize the results of the analysis.
+
+\lipsum[3]
+
+Table~\ref{tab:tablel} shows some of the findings from this analysis.
+
+\begin{table}[tbp]
+\caption{Table #1 in this manuscript}
+\label{tab:tablel}
+\centering
+\begin{tabular}{rrr}
+\toprule
+x & y & z \\
+\midrule
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure~\ref{fig:figu} shows another important feature of the analysis.
+
+\begin{figure}[tbp]
+    \centering
+    \includegraphics[width=\textwidth]{Practicing LaTeX Example Figure.pdf}
+    \caption{Figure #1 in this manuscript.}
+    \label{fig:figure1}
+\end{figure}
+
+\lipsum[2]
+
+\bibliography{Bibtex}
+\bibliographystyle{chicago}
+
+\end{document}
