@@ -1,0 +1,14 @@
+\begin{table}[tbp]
+\caption{Table #1 in this manuscript}
+\label{tab:tablel}
+\centering
+\begin{tabular}{rrr}
+\toprule
+x & y & z \\
+\midrule
+1 & 2 & 3 \\
+4 & 5 & 6 \\
+7 & 8 & 9 \\
+\bottomrule
+\end{tabular}
+\end{table}
